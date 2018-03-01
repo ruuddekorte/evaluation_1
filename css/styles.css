@@ -1,0 +1,148 @@
+/* ##### basic HTML5 tags ##### */
+
+body {
+    font-size: 18px;
+    margin: 0;
+    min-height: 1200px;
+    background-color: #F3F8F7;
+    /*  ##### white-grey with slight blue tint #####  */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+main {
+    margin: 30px;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px; 
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #333;
+    color: #DDD;
+}
+
+li{
+    list-style: none;
+} 
+
+/*    CUSTOM CLASSES  NAVIGATION ELEMENTS         */
+
+nav {
+    height: 50px;
+    min-height: 70px;
+    background-color: #191900;
+    /* ##### warm dark-grey ##### */
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.nav-item {
+    background-color: #191900;
+    /* ##### warm dark-grey ##### */
+}
+
+.nav-elem .container-fluid {
+    margin: 0;
+}
+
+@media (max-width: 980px) {
+    .nav-item {
+        padding-left: 2em;
+        padding right: 2em;
+    }
+}
+
+
+
+
+/*       CUSTOM CLASSES  CARD CLASSES      */
+
+.card {
+    width: 300px;
+    height: 230px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card_image {
+    width: 300px;
+    height: 200px;
+    background: rgba(180, 180, 200, 0.6);
+    overflow: hidden;
+}
+
+.card_image img {
+    width: 300px;
+    height: 200px;
+}
+
+.card_text {
+    width: 300px;
+    height: 30px;
+    font-size: 1, 2em;
+    color: #000000;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+/*      CUSTOM CLASS STICKY HEADER POSITION    */
+
+
+.sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+
+
+
+/*    CUSTOM CLASSES  FLOATING "BACK TO TOP" BUTTON    */
+
+#toTop {
+    position: fixed;
+    bottom: 95px;
+    right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+#toTop .fa {
+    margin-right: 5px;
+}
+
+.btn-back {
+  color: #fff;
+  background-color: #17BF00;
+  border-color: #17BF00;
+}
+
