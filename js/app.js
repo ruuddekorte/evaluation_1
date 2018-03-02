@@ -55,7 +55,7 @@
 
 
 
-    // $("#FC1 ,#FC2 ,#FC3 ,#FC4").blur(function() 
+   
     $("input").blur(function() {
         var ldf = ldc = ldo = lad = ltd = lrs = lra = lrr = lar = ltr = lep = ltx = 0;
 
