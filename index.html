@@ -40,7 +40,7 @@
                         <a class="nav-link active" href="#a_budgetm">BUDGETm</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#a_expences">Dépences</a>
+                        <a class="nav-link" href="#a_expences">Dépenses</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#a_revenues">Recettes</a>
@@ -49,7 +49,7 @@
                         <a class="nav-link" href="#a_savings">Epargne</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#a_result">Result</a>
+                        <a class="nav-link" href="#a_result">Résultat</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link highlightlink" href="#a_reset">Reset</a>
@@ -61,59 +61,203 @@
     <!-- ####### MAIN CONTENT ####### -->
     <main>
         <div class="row">
-            <div class="col-md-6 col-sm-12-12">
-                <!-- ####### SECTION 1, the EXPENCES (les DEPENCES) ####### -->
+            <div class="col-md-6 col-sm-12">
+                <!-- ####### SECTION 1, the EXPENCES (les DEPENSES) ####### -->
                 <a name="a_expences"></a>
-                <section>
-                    expences
-                    <br/> expences
-                    <br/> expences
-                    <br/> expences
-                    <br/> expences
-                    <br/>
+                <section class="l-blue">
+                    <form id="expence-form" action="">
+                        <!--  onsubmit="return false;" -->
+                        <h1>Dépenses</h1>
+                        <h3>Dépenses fixes</h3>
+                        <!--  #######  -->
+                        <label class="w-xl">loyer et charges * : </label>
+                        <input id="DF1" type="text" class="w-sm">
+                        <br />
+                        <label class="w-xl">remboursement de crédits : </label>
+                        <input id="DF2" type="text" class="w-sm">
+                        <br />
+                        <label class="w-xl">eau/électricité/gaz * : </label>
+                        <input id="DF3" type="text" class="w-sm">
+                        <br />
+                        <label class="w-xl">téléphone - internet * : </label>
+                        <input id="DF4" type="text" class="w-sm">
+                        <br />
+                        <label class="w-xl">assurance habitation : </label>
+                        <input id="DF5" type="text" class="w-sm">
+                        <br />
+                        <label class="w-xl">assurance véhicules : </label>
+                        <input id="DF6" type="text" class="w-sm">
+                        <br />
+                        <label class="w-xl">mutuelle santé : </label>
+                        <input id="DF7" type="text" class="w-sm">
+                        <br />
+                        <label class="w-xl">impôts sur le revenu : </label>
+                        <input id="DF8" type="text" class="w-sm">
+                        <br />
+                        <label class="w-xl">impôts locaux : </label>
+                        <input id="DF9" type="text" class="w-sm">
+                        <br />
+                        <label class="w-xl">total dépenses fixes </label>
+                        <input id="STDF" type="text" class="w-sm" disabled>
+                        <br />
+                        <!--  #######  -->
+                        <h3>Les dépenses courantes</h3>
+                        <label class="w-md">courses (par semaine) : </label>
+                        <input id="FC1" type="text" class="w-xs">
+                        <input id="DC1" type="text" class="w-xs" disabled>
+                        <br />
+                        <label class="w-md">essence/frais de transport (par semaine) </label>
+                        <input id="FC2" type="text" class="w-xs">
+                        <input id="DC2" type="text" class="w-xs" disabled>
+                        <br />
+                        <label class="w-md">activités sportives et culturelles (par an) </label>
+                        <input id="FC3" type="text" class="w-xs">
+                        <input id="DC3" type="text" class="w-xs" disabled>
+                        <br />
+                        <label class="w-xl">total dépenses courantes </label>
+                        <input id="STDC" type="text" class="w-sm" disabled>
+                        <br />
+                        <!--  #######  -->
+                        <h3>Les dépenses occasionnelles</h3>
+                        <label class="w-md">sorties (par semaine) : </label>
+                        <input id="FC4" type="text" class="w-xs">
+                        <input id="DO1" type="text" class="w-xs" disabled>
+                        <br />
+                        <label class="w-xl">total dépenses occasionnelles </label>
+                        <input id="STDO" type="text" class="w-sm" disabled>
+                        <br />
+                        <!--  #######  -->
+                        <h3>Autres dépenses</h3>
+                        <input id="field1" type="text" class="f-xl">
+                        <input id="AD1" type="text" class="w-sm">
+                        <br />
+                        <input id="field2" type="text" class="f-xl">
+                        <input id="AD2" type="text" class="w-sm">
+                        <br />
+                        <input id="field3" type="text" class="f-xl">
+                        <input id="AD3" type="text" class="w-sm">
+                        <br />
+                        <input id="field4" type="text" class="f-xl">
+                        <input id="AD4" type="text" class="w-sm">
+                        <br />
+                        <input id="field5" type="text" class="f-xl">
+                        <input id="AD5" type="text" class="w-sm">
+                        <br />
+                        <label class="w-xl">total autres dépenses </label>
+                        <input id="STAD" type="text" class="w-sm" disabled>
+                        <br />
+                        <!--  #######  -->
+                        <h3>Total dépenses</h3>
+                        <label class="w-xl">Total Dépenses </label>
+                        <input id="STTD" type="text" class="w-sm" disabled>
+                        <br />
+                        <br />
+                        <br />
+                        <!--  #######  -->
+                    </form>
                 </section>
             </div>
-            <div class="col-md-6 col-sm-12-12">
+            <div class="col-md-6 col-sm-12">
                 <!-- ####### SECTION 2, the REVENUES (les RECETTES) ####### -->
                 <a name="a_revenues"></a>
-                <section>
-                    revenues
-                    <br/>revenues
-                    <br/>revenues
-                    <br/>revenues
-                    <br/>
+                <section class="l-green">
+                    <form id="revenue-form" action="">
+                        <!--  onsubmit="return false;" -->
+                        <h1>Revenues</h1>
+                        <!--  #######  -->
+                        <h3>Salaire</h3>
+                        <label class="w-xl">Moi : </label>
+                        <input id="RS1" type="text" class="w-sm">
+                        <br />
+                        <label class="w-xl">Partner : </label>
+                        <input id="RS2" type="text" class="w-sm">
+                        <br />
+                        <label class="w-xl">total revenues sailaire </label>
+                        <input id="STRS" type="text" class="w-sm" disabled>
+                        <br />
+                        <!--  #######  -->
+                        <h3>Aides</h3>
+                        <label class="w-xl">Allocation familial : </label>
+                        <input id="RA1" type="text" class="w-sm">
+                        <br />
+                        <label class="w-xl">Allocation logement : </label>
+                        <input id="RA2" type="text" class="w-sm">
+                        <br />
+                        <label class="w-xl">Autre allocations : </label>
+                        <input id="RA3" type="text" class="w-sm">
+                        <br />
+                        <label class="w-xl">total aides </label>
+                        <input id="STRA" type="text" class="w-sm" disabled>
+                        <br />
+                        <!--  #######  -->
+                        <h3>Rentes</h3>
+                        <label class="w-xl">Rentes : </label>
+                        <input id="RR1" type="text" class="w-sm">
+                        <br />
+                        <label class="w-xl">total rentes </label>
+                        <input id="STRR" type="text" class="w-sm" disabled>
+                        <br />
+                        <!--  #######  -->
+                        <h3>Autres recettes</h3>
+                        <input id="field" type="text" class="f-xl">
+                        <input id="AR1" type="text" class="w-sm">
+                        <br />
+                        <input id="field" type="text" class="f-xl">
+                        <input id="AR2" type="text" class="w-sm">
+                        <br />
+                        <input id="field" type="text" class="f-xl">
+                        <input id="AR3" type="text" class="w-sm">
+                        <br />
+                        <input id="field" type="text" class="f-xl">
+                        <input id="AR4" type="text" class="w-sm">
+                        <br />
+                        <input id="field" type="text" class="f-xl">
+                        <input id="AR5" type="text" class="w-sm">
+                        <br />
+                        <label class="w-xl">total autres recettes</label>
+                        <input id="STAR" type="text" class="w-sm" disabled>
+                        <br />
+                        <!--  #######  -->
+                        <h3>Total Recettes</h3>
+                        <label class="w-xl">Total recettes </label>
+                        <input id="STTR" type="text" class="w-sm" disabled>
+                        <br />
+                    </form>
                 </section>
                 <!-- ####### SECTION 3, SAVINGS (EPARGNE) ####### -->
                 <a name="a_savings"></a>
-                <section>
-                    savings
-                    <br/>savings
-                    <br/>savings
-                    <br/>
+                <section class="l-magenta">
+                    <h1>Epargne</h1>
+                    <h3>Epargne</h3>
+                    <label class="w-xl">Epargne : </label>
+                    <input id="EP1" type="text" class="w-sm">
+                    <br />
+                    <h4>&nbsp;</h4>
+                    <h4 class="t-violet">Vous économisez pour un objectif bien précis ou vous souhaitez tout simplement mettre un peu d'argent de côté?</h4>
+                    <h4 class="t-violet">Le plus simple, c'est de définir un montant à épargner, par exemple, chaque mois. Vous vous obligez ainsi à économiser alors que vous auriez peut-être dépensé cet argent.</h4>
                 </section>
             </div>
         </div>
         </div>
         <!-- ####### SECTION 4, the RESULTS ####### -->
         <a name="a_result"></a>
-        <section>
+        <section class="l-violet">
             <div class="row">
                 <div class="col-md-12 col-sm-12">
-                    result
-                    <br/> result
-                    <br/> result
-                    <br/>
+                    <h1>Result</h1>
+                    <input id="STXX" type="text" class="w-sm" disabled>
+                    <br />
                 </div>
             </div>
         </section>
         <!-- ####### SECTION RESET ####### -->
         <a name="a_reset"></a>
-        <section>
+        <section class="l-black">
             <div class="row">
                 <div class="col-md-10 col-sm-10">
-                    reset, this will erase all data entered, are you very very sure ?
+                    <h1>Reset</h1> reset, this will erase all data entered, are you very very sure ?
                     <br/> reset, this will erase all data entered, are you very very sure ?
-                    <br/> reset, this will erase all data entered, are you very very sure ? 
+                    <br/> reset, this will erase all data entered, are you very very sure ?
                 </div>
                 <div class="col-md-2 col-sm-2">
                     <button id="btnreset">RESET <i class="fa fa-undo" aria-hidden="true"></i></button>
@@ -129,15 +273,17 @@
             <div class="col-md-12 col-sm-12">
                 <p>&nbsp; </p>
                 <ul><strong>Documentation</strong> :
-                    <li>1.user-experience.pdf</li>
-                    <li>1.user-stories.pdf</li>
-                    <li>2.wireframe.pdf</li>
-                    <li>3.maquette.pdf</li>
-                    <li>4.template HTML (cette page index.html)</li>
+                    <li><a href="documentation/1.user-experience.pdf">1. User-experience.pdf</a></li>
+                    <li><a href="documentation/1.user-stories.pdf">1. User-stories.pdf</a></li>
+                    <li><a href="documentation/2.wireframe.pdf">2. Wireframe.pdf</a></li>
+                    <li><a href="documentation/3.maquette.pdf">3. Maquette.pdf</a></li>
+                    <li><a href="https://ruuddekorte.github.io/evaluation_1/">4. Template HTML (cette page index.html)</a></li>
+                    <li><a href="https://github.com/ruuddekorte/evaluation_1">5. code et information supplementaire vous trouverez sur mon espace github</a></li>
                 </ul>
             </div>
         </div>
     </footer>
+
     <!-- ####### LINKED JAVASCRIPT FILES ####### -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>

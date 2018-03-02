@@ -24,7 +24,8 @@ main {
 
 section {
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 40px; 
+    padding: 40px;
+    padding-right: 30px;
     margin-bottom: 40px;
     margin-top: 80px;
 }
@@ -36,9 +37,54 @@ footer {
     color: #DDD;
 }
 
-li{
+footer a {
+    color: #FFFFFFF;
+    text-decoration: none;
+}
+
+footer a:hoover {
+    color: #FFFFFFF;
+    text-decoration: none;
+}
+
+footer a:active {
+    color: #FFFFFFF;
+    text-decoration: none;
+}
+
+li {
     list-style: none;
-} 
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 2em;
+}
+
+h4 {
+    font-size: 0.7em;
+}
+
+p {
+    font-size: 1em;
+}
+
+form{
+    padding: 0;
+    margin: 0;
+}
+
 
 /*    CUSTOM CLASSES  NAVIGATION ELEMENTS         */
 
@@ -70,7 +116,70 @@ nav {
 
 
 
-/*       CUSTOM CLASSES  CARD CLASSES      */
+
+
+
+/*       CUSTOM CLASSES & CARD CLASSES      */
+
+.l-blue {
+    border: 2px solid blue;
+    border-radius: 12px 12px 2px 2px;
+}
+
+.l-green {
+    border: 2px solid green;
+    border-radius: 12px 12px 2px 2px;
+}
+
+.l-magenta {
+    border: 2px solid magenta;
+    border-radius: 12px 12px 2px 2px;
+}
+
+.l-violet {
+    border: 2px solid violet;
+    border-radius: 12px 12px 2px 2px;
+}
+
+.t-violet {
+    color: violet;
+}
+
+.l-black {
+    border: 2px solid #222222;
+    border-radius: 12px 12px 2px 2px;
+}
+
+
+
+.w-xl {
+    width: 360px;
+    max-width: 360px;
+    display: inline-block;
+}
+
+.f-xl {
+    width: 358px;
+    max-width: 358px;
+    display: inline-block;
+}
+
+.w-md {
+    width: 300px;
+    max-width: 300px;
+    display: inline-block;
+}
+
+
+.w-sm {
+    width: 150px;
+    max-width: 150px;
+}
+
+.w-xs {
+    width: 100px;
+    max-width: 100px;
+}
 
 .card {
     width: 300px;
@@ -110,8 +219,10 @@ nav {
 }
 
 
-/*      CUSTOM CLASS STICKY HEADER POSITION    */
 
+
+
+/*      CUSTOM CLASS STICKY HEADER POSITION    */
 
 .sticky.is-sticky {
     position: fixed;
@@ -121,6 +232,9 @@ nav {
     z-index: 1000;
     width: 100%;
 }
+
+
+
 
 
 
@@ -141,8 +255,7 @@ nav {
 }
 
 .btn-back {
-  color: #fff;
-  background-color: #17BF00;
-  border-color: #17BF00;
+    color: #fff;
+    background-color: #F28500;
+    border-color: #F28500;
 }
-
