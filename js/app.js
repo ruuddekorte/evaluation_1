@@ -81,8 +81,8 @@
         // calculate/convert expenditures
         // weekly expenditures * 4.16 = monthly (=52/12)
         // yearly expenditures / 12   = monthly
-        a *= 4, 16;
-        b *= 4, 16;
+        a *= 4,16;
+        b *= 4,16;
         c /= 12;
         $("#DC1").val(a);
         $("#DC2").val(b);
@@ -95,7 +95,7 @@
         var a = ($("#FC4").val()) * 1;
         // calculate/convert expenditures
         // weekly expenditures * 4.16 = monthly (=52/12)
-        a *= 4, 16;
+        a *= 4,16;
         $("#DO1").val(a);
 
         ldo = a;
