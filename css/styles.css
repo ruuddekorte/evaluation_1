@@ -150,7 +150,12 @@ nav {
     border-radius: 12px 12px 2px 2px;
 }
 
-
+.w-msg {
+    width: 600px;
+    max-width: 600px;
+    display: inline-block;
+    margin-top: 3.5em;
+}
 
 .w-xl {
     width: 360px;
@@ -162,6 +167,7 @@ nav {
     width: 358px;
     max-width: 358px;
     display: inline-block;
+    margin-bottom: 3px;
 }
 
 .w-md {

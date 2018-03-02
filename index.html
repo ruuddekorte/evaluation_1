@@ -150,9 +150,10 @@
                         <h3>Total dépenses</h3>
                         <label class="w-xl">Total Dépenses </label>
                         <input id="STTD" type="text" class="w-sm" disabled>
-                        <br />
-                        <br />
-                        <br />
+                        <br />&nbsp;
+                        <br />&nbsp;
+                        <br />&nbsp;
+                        <br />&nbsp;
                         <!--  #######  -->
                     </form>
                 </section>
@@ -233,7 +234,7 @@
                     <input id="EP1" type="text" class="w-sm">
                     <br />
                     <h4>&nbsp;</h4>
-                    <h4 class="t-violet">Vous économisez pour un objectif bien précis ou vous souhaitez tout simplement mettre un peu d'argent de côté?</h4>
+                    <h4 class="t-violet">&nbsp; <br />Vous économisez pour un objectif bien précis ou vous souhaitez tout simplement mettre un peu d'argent de côté?</h4>
                     <h4 class="t-violet">Le plus simple, c'est de définir un montant à épargner, par exemple, chaque mois. Vous vous obligez ainsi à économiser alors que vous auriez peut-être dépensé cet argent.</h4>
                 </section>
             </div>
@@ -243,10 +244,19 @@
         <a name="a_result"></a>
         <section class="l-violet">
             <div class="row">
-                <div class="col-md-12 col-sm-12">
+                <div class="col-md-2 col-sm-2">
                     <h1>Result</h1>
-                    <input id="STXX" type="text" class="w-sm" disabled>
                     <br />
+                    <input id="STXX" type="text" class="w-sm" disabled>
+                </div>
+                <div class="col-md-10 col-sm-10">
+                    <span id="resultmessage">                        
+                        <input id="RSLT" type="text" class="w-msg" disabled>
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
                 </div>
             </div>
         </section>
@@ -255,12 +265,13 @@
         <section class="l-black">
             <div class="row">
                 <div class="col-md-10 col-sm-10">
-                    <h1>Reset</h1> reset, this will erase all data entered, are you very very sure ?
-                    <br/> reset, this will erase all data entered, are you very very sure ?
-                    <br/> reset, this will erase all data entered, are you very very sure ?
+                    <h1>Reset</h1>
+                    <h3>Cliquez sur le bouton RESET à droite pour supprimer toute les données de cette page</h3>
                 </div>
                 <div class="col-md-2 col-sm-2">
-                    <button id="btnreset">RESET <i class="fa fa-undo" aria-hidden="true"></i></button>
+                    <a href="index.html">
+                        <button id="btnreset">RESET <i class="fa fa-undo" aria-hidden="true"></i></button>
+                    </a>
                 </div>
             </div>
         </section>
@@ -283,7 +294,6 @@
             </div>
         </div>
     </footer>
-
     <!-- ####### LINKED JAVASCRIPT FILES ####### -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>

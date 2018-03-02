@@ -1,46 +1,5 @@
 (function main() {
 
-    // ######## SANDBOX CONTAINING SNIPPETS OF CODE WHICH I CAN 
-    // ######## POSSIBLY USE OR NEED TO KEEP FOR TE MOMENT
-    // ######## 
-    // ######## THESE SNIPPETS ARE 'COMMENTED' TO AVOID 
-    // ######## INTERFERENCE WITH THE PROPER JAVASCRIPTCODE
-
-    // var test = function ()  {
-    //   object= document.getElementById("bouton")
-    //   object.onclick=function() {
-
-    //       function ;
-
-    //             var nombre1 = parseInt(document.getElementById("nombre1").value);
-
-    //             var resultat = nombre1+nombre2;
-    //             alert (resultat);
-
-    //       endfunction;
-    //     }
-    // }  
-
-    // <script type="text/javascript">
-
-    //   function calculateTotal() {
-
-    //     var totalAmt = document.addem.total.value;
-    //     totalR = eval(totalAmt - document.addem.tb1.value);
-
-    //     document.getElementById('update').innerHTML = totalR;
-    //   }
-
-    // </script>
-
-    // <form name="addem" action="" id="addem" > 
-    //   <span id="update">100</span>
-    //   <p><input type="text" name="tb1" onkeyup="calculateTotal()"/>first textbox</p>
-
-    //   <input type="hidden" name="total" value="100" />
-    // </form>
-
-
     // on ENTER simulate TAB to move to next field 
     $('form input').keydown(function(e) {
         if (e.keyCode == 13) {
@@ -81,8 +40,8 @@
         // calculate/convert expenditures
         // weekly expenditures * 4.16 = monthly (=52/12)
         // yearly expenditures / 12   = monthly
-        a *= 4,16;
-        b *= 4,16;
+        a *= 4.16;
+        b *= 4.16;
         c /= 12;
         $("#DC1").val(a);
         $("#DC2").val(b);
@@ -95,7 +54,7 @@
         var a = ($("#FC4").val()) * 1;
         // calculate/convert expenditures
         // weekly expenditures * 4.16 = monthly (=52/12)
-        a *= 4,16;
+        a *= 4.16;
         $("#DO1").val(a);
 
         ldo = a;
@@ -160,6 +119,23 @@
         // calculate result
         ltx = ltr - (ltd + lep);
         $("#STXX").val(ltx);
+
+
+        // negative budget
+        if (ltx<-20) {
+            $("#RSLT").val('Votre budget montre une résultat négative');
+        }
+
+        // budget between -20 and + 20 is considered to be fairely balanced
+        if (ltx > -20 && ltx < 20) {
+            $("#RSLT").val('Votre budget est en equilibre (entre -20 et +20');
+        }
+
+        // positive budget
+        if (ltx>20) {
+            $("#RSLT").val('Votre budget montre une résultat positive');
+        }
+
 
     });
 
